@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+<main>
+<div id = "wrapper">
+<img src = "mad-libs-app-original.png" width="60%" height="auto">
+<p>Please enter the following information:</p>
+<span id="inputs" >
+<input id="pluralNoun" placeholder="plural noun" type="text" ><br>
+<input id="noun1" placeholder="noun" type="text"><br>
+<input id="noun2" placeholder="noun" type="text"><br>
+<input id="adj" placeholder="adj" type="text"><br>
+<input id="verb" placeholder="verb" type="text"><br>
+</span>
+<br>
+<button type="button" onclick="createMessage()">Submit</button>
+<br>
+<br>
+<div id="result" style="display:none">
+    Microwaving bread is tricky.<br>
+    <ol>
+    <li>
+        Double check that <span id="word1"></span> are in the outlets at all times.
+    </li>
+    <br>
+    <li>
+        Keep the bread on top of the <span id="word2"></span> to cook evenly so the <span id="word3"></span> can spin.  
+    </li>
+    <br>
+    <li>
+        Stare at the <span id="word4"></span> ceiling.  
+    </li>
+    <br>
+    <li>
+        Wait patiently and <span id="word5"></span> when the timer has one second remaining.  
+    </li>
+    </ol>
+    <br>
+    <button type="button" onclick="goAgain()">Reset</button>
+</div>
+
+</main>
+<script src="madlibs.js"></script>
+</body>
+</html> 
